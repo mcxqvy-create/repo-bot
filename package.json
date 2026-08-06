@@ -1,12 +1,12 @@
 {
   "name": "spy-ny-open-paper-bot",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
-  "description": "TradingView webhook bridge for the SPY NY Open strategy and Alpaca Paper Trading",
+  "description": "Autonomous SPY NY Open strategy runner for Alpaca Paper Trading",
   "scripts": {
     "test": "node --test",
-    "check": "node --check api/tradingview.js && node --check api/health.js && node --check lib/alpaca.js && node --check lib/bot.js"
+    "check": "node --check api/tradingview.js && node --check api/run.js && node --check api/health.js && node --check lib/alpaca.js && node --check lib/bot.js && node --check lib/strategy.js && node --check lib/autonomous.js"
   },
   "engines": {
     "node": ">=20"
